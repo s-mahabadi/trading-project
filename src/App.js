@@ -12,6 +12,8 @@ function App() {
 
   useEffect(() => {
     // code to run after render goes here
+    console.log("USE EFFECT");
+    chartContainerRef.current.innerHTML = "";
     const chartManager = new ChartManager(chartContainerRef.current);
   }, []);
 
